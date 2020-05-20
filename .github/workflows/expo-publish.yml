@@ -1,0 +1,40 @@
+name: Expo Publishing
+on:
+  push:
+    branches:
+      - master
+jobs:
+  setup-pandoc:
+    name: Setup and run pandoc
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-pandoc@v1
+        with:
+          pandoc-version: '2.9.2'x
+      - run: |
+        SET parent = %%~dp0
+        IF NOT EXIST "www" mkdir www
+        for /r "docs" %%i in (*.docx) do pandoc -s --self-contained --template=GitHub.html5 --track-changes=accept -f docx+styles -t html "%%~fi" -o "%%~dpni.html"
+        for /R %parent% %%i in (*.html) do call :repl "%%i"
+        goto :eof 
+        :repl
+        set "_fn=%~nx1"
+        ren %1 "%_fn: =_%"
+        for /r "docs" %%i in (*.html) do move "%%~dpni.html" www
+  publish:
+    name: Install and publish
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - uses: expo/expo-github-action@v5
+        with:
+          expo-version: 3.x
+          expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
+          expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
+          expo-cache: true
+      - run: yarn install
+      - run: expo publish
