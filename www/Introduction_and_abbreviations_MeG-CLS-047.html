@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<!--
+==============================================================================
+           "GitHub HTML5 Pandoc Template" v2.1 — by Tristano Ajmone           
+==============================================================================
+Copyright © Tristano Ajmone, 2017, MIT License (MIT). Project's home:
+
+- https://github.com/tajmone/pandoc-goodies
+
+The CSS in this template reuses source code taken from the following projects:
+
+- GitHub Markdown CSS: Copyright © Sindre Sorhus, MIT License (MIT):
+  https://github.com/sindresorhus/github-markdown-css
+
+- Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
+  http://primercss.io/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The MIT License 
+
+Copyright (c) Tristano Ajmone, 2017 (github.com/tajmone/pandoc-goodies)
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+Copyright (c) 2017 GitHub Inc.
+
+"GitHub Pandoc HTML5 Template" is Copyright (c) Tristano Ajmone, 2017, released
+under the MIT License (MIT); it contains readaptations of substantial portions
+of the following third party softwares:
+
+(1) "GitHub Markdown CSS", Copyright (c) Sindre Sorhus, MIT License (MIT).
+(2) "Primer CSS", Copyright (c) 2016 GitHub Inc., MIT License (MIT).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+==============================================================================-->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Introduction and abbreviations MeG-CLS-047</title>
+  <style type="text/css">
+@charset "UTF-8";.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5;word-wrap:break-word;box-sizing:border-box;min-width:200px;max-width:980px;margin:0 auto;padding:45px}.markdown-body a{color:#0366d6;background-color:transparent;text-decoration:none;-webkit-text-decoration-skip:objects}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body a:hover{text-decoration:underline}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body strong{font-weight:600}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1{font-size:2em;margin:.67em 0;padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body h2{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eaecef}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body img{border-style:none}.markdown-body svg:not(:root){overflow:hidden}.markdown-body hr{box-sizing:content-box;height:.25em;margin:24px 0;padding:0;overflow:hidden;background-color:#e1e4e8;border:0}.markdown-body hr::before{display:table;content:""}.markdown-body hr::after{display:table;clear:both;content:""}.markdown-body input{margin:0;overflow:visible;font:inherit;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dd{margin-left:0}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}.markdown-body pre{font:12px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;word-wrap:normal}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;border-spacing:0;border-collapse:collapse}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body code{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body code::after,.markdown-body code::before{letter-spacing:-.2em;content:" "}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code::after,.markdown-body pre code::before{content:normal}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{box-shadow:inset 0 -1px 0 #959da5;display:inline-block;padding:3px 5px;font:11px/10px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;color:#444d56;vertical-align:middle;background-color:#fcfcfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body::before{display:table;content:""}.markdown-body::after{display:table;clear:both;content:""}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.Alert,.Error,.Note,.Success,.Warning{padding:11px;margin-bottom:24px;border-style:solid;border-width:1px;border-radius:4px}.Alert p,.Error p,.Note p,.Success p,.Warning p{margin-top:0}.Alert p:last-child,.Error p:last-child,.Note p:last-child,.Success p:last-child,.Warning p:last-child{margin-bottom:0}.Alert{color:#246;background-color:#e2eef9;border-color:#bac6d3}.Warning{color:#4c4a42;background-color:#fff9ea;border-color:#dfd8c2}.Error{color:#911;background-color:#fcdede;border-color:#d2b2b2}.Success{color:#22662c;background-color:#e2f9e5;border-color:#bad3be}.Note{color:#2f363d;background-color:#f6f8fa;border-color:#d5d8da}.Alert h1,.Alert h2,.Alert h3,.Alert h4,.Alert h5,.Alert h6{color:#246;margin-bottom:0}.Warning h1,.Warning h2,.Warning h3,.Warning h4,.Warning h5,.Warning h6{color:#4c4a42;margin-bottom:0}.Error h1,.Error h2,.Error h3,.Error h4,.Error h5,.Error h6{color:#911;margin-bottom:0}.Success h1,.Success h2,.Success h3,.Success h4,.Success h5,.Success h6{color:#22662c;margin-bottom:0}.Note h1,.Note h2,.Note h3,.Note h4,.Note h5,.Note h6{color:#2f363d;margin-bottom:0}.Alert h1:first-child,.Alert h2:first-child,.Alert h3:first-child,.Alert h4:first-child,.Alert h5:first-child,.Alert h6:first-child,.Error h1:first-child,.Error h2:first-child,.Error h3:first-child,.Error h4:first-child,.Error h5:first-child,.Error h6:first-child,.Note h1:first-child,.Note h2:first-child,.Note h3:first-child,.Note h4:first-child,.Note h5:first-child,.Note h6:first-child,.Success h1:first-child,.Success h2:first-child,.Success h3:first-child,.Success h4:first-child,.Success h5:first-child,.Success h6:first-child,.Warning h1:first-child,.Warning h2:first-child,.Warning h3:first-child,.Warning h4:first-child,.Warning h5:first-child,.Warning h6:first-child{margin-top:0}h1.title,p.subtitle{text-align:center}h1.title.followed-by-subtitle{margin-bottom:0}p.subtitle{font-size:1.5em;font-weight:600;line-height:1.25;margin-top:0;margin-bottom:16px;padding-bottom:.3em}div.line-block{white-space:pre-line}
+  </style>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<article class="markdown-body">
+<h1 id="introduction-to-clinical-services-department-csd-guidelines">Introduction to Clinical Services Department (CSD) guidelines</h1>
+<h2 id="introduction">Introduction</h2>
+<h2 id="csd-has-produced-a-set-of-guidelines-to-be-used-in-the-department-with-the-aim-of-standardizing-care-to-ensure-we-are-making-the-best-use-of-the-resources-and-facilities-available-to-us-and-to-help-new-doctors-and-nurses-settle-in.">CSD has produced a set of guidelines to be used in the department with the aim of standardizing care to ensure we are making the best use of the resources and facilities available to us and to help new doctors and nurses settle in.</h2>
+<p>This introductory document outlines some of the approaches that have been taken and lists abbreviations used in the guidelines</p>
+<h2 id="general-approach">General approach</h2>
+<p>As far as possible, CSD guidelines recommend the use of investigations and drugs available within the department. Where something is temporarily unavailable, it will have been included as if it were available.</p>
+<p>Exceptions to this include:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>investigations which are available in country</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>drugs which have a good evidence base and are easily accessible in country</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>emergency interventions which are last ditch attempts to save a life and which might be available depending on the skill of the doctor on duty.</p>
+</div></li>
+</ul>
+<p>In general, it is assumed that most doctors will be able to do all the procedures referred to. If an individual is not experienced, then they can ask the consultants in the department for help.</p>
+<p>Some specific procedures are not included as guidelines, but as formal SOPs. These are usually those that are necessary for research patients or that need standardized approaches. The latest version of each of these has been placed in a folder alongside the guidelines.</p>
+<p>The guidelines provide support to nurses who see patients and prescribe as well as to doctors – including guidance on when patients should be referred from the care of a nurse to a doctor.</p>
+<h2 id="controlling-guidelines">Controlling guidelines</h2>
+<p>Please note that the guidelines are only controlled when they are viewed online. Any printed version is by definition uncontrolled and may not be the latest version.</p>
+<p>All SOPs are only controlled when viewed on sharepoint (although in practice, as soon as they are updated the version in the guidelines’ folder is also updated).</p>
+<h2 id="app">App</h2>
+<p>These guidelines are also available in app form for mobile phones.</p>
+<h2 id="abbreviations">Abbreviations</h2>
+<table>
+<thead>
+<tr class="header">
+<th>ºC</th>
+<th>Degrees Celsius</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>µIU</td>
+<td>Micro-international unit</td>
+</tr>
+<tr class="even">
+<td>µmol</td>
+<td>Micromole</td>
+</tr>
+<tr class="odd">
+<td>ABM</td>
+<td>Acute bacterial meningitis</td>
+</tr>
+<tr class="even">
+<td>ACEi</td>
+<td>Angiotensin converting enzyme inhibitor</td>
+</tr>
+<tr class="odd">
+<td>ACS</td>
+<td>Acute coronary syndrome</td>
+</tr>
+<tr class="even">
+<td>ACTH</td>
+<td>Adreno-corticotropic hormone</td>
+</tr>
+<tr class="odd">
+<td>AF</td>
+<td>Atrial fibrillation</td>
+</tr>
+<tr class="even">
+<td>AFB</td>
+<td>Acid fast bacilli</td>
+</tr>
+<tr class="odd">
+<td>AFP</td>
+<td>Alpha-fetoprotein</td>
+</tr>
+<tr class="even">
+<td>AKI</td>
+<td>Acute kidney injury</td>
+</tr>
+<tr class="odd">
+<td>ALT</td>
+<td>Alanine aminotransferase</td>
+</tr>
+<tr class="even">
+<td>AM</td>
+<td>Acute mastoiditis</td>
+</tr>
+<tr class="odd">
+<td>AMI</td>
+<td>Acute myocardial infarction</td>
+</tr>
+<tr class="even">
+<td>AMPLE</td>
+<td>Allergies, medications, past medical history / pregnancy, last eaten, events</td>
+</tr>
+<tr class="odd">
+<td>AOM</td>
+<td>Acute otitis media</td>
+</tr>
+<tr class="even">
+<td>APTT</td>
+<td>Activated partial thromboplastin time</td>
+</tr>
+<tr class="odd">
+<td>ARBs</td>
+<td>Angiotensin receptor blockers</td>
+</tr>
+<tr class="even">
+<td>ARF</td>
+<td>Acute rheumatic fever</td>
+</tr>
+<tr class="odd">
+<td>ART</td>
+<td>Anti-retroviral therapy</td>
+</tr>
+<tr class="even">
+<td>ASD</td>
+<td>Atrial septal defect</td>
+</tr>
+<tr class="odd">
+<td>AST</td>
+<td>Aspartate aminotransferase</td>
+</tr>
+<tr class="even">
+<td>AVSD</td>
+<td>Atrioventricular septal defect</td>
+</tr>
+<tr class="odd">
+<td>BD</td>
+<td>Twice per day</td>
+</tr>
+<tr class="even">
+<td>BMI</td>
+<td>Body mass index</td>
+</tr>
+<tr class="odd">
+<td>BNF</td>
+<td>British National Formulary</td>
+</tr>
+<tr class="even">
+<td>BP</td>
+<td>Blood pressure</td>
+</tr>
+<tr class="odd">
+<td>CCB</td>
+<td>Calcium channel blocker</td>
+</tr>
+<tr class="even">
+<td>CCHD</td>
+<td>Cyanotic congenital heart disease</td>
+</tr>
+<tr class="odd">
+<td>CD4</td>
+<td>Cluster differentiation 4</td>
+</tr>
+<tr class="even">
+<td>CHD</td>
+<td>Congenital heart disease</td>
+</tr>
+<tr class="odd">
+<td>CHF</td>
+<td>Congestive heart failure</td>
+</tr>
+<tr class="even">
+<td>CKD</td>
+<td>Chronic kidney disease</td>
+</tr>
+<tr class="odd">
+<td>CKD-EPI</td>
+<td>Chronic kidney disease – epidemiology collaboration</td>
+</tr>
+<tr class="even">
+<td>Cl</td>
+<td>Chloride</td>
+</tr>
+<tr class="odd">
+<td>CK</td>
+<td>Creatinine kinase</td>
+</tr>
+<tr class="even">
+<td>CKMB</td>
+<td>Creatine kinase Muscle Brain</td>
+</tr>
+<tr class="odd">
+<td>CLD</td>
+<td>Chronic liver disease</td>
+</tr>
+<tr class="even">
+<td>CM</td>
+<td>Cryptococcal meningitis</td>
+</tr>
+<tr class="odd">
+<td>CMV</td>
+<td>Cytomegalovirus</td>
+</tr>
+<tr class="even">
+<td>COPD</td>
+<td>Chronic obstructive pulmonary disease</td>
+</tr>
+<tr class="odd">
+<td>CP</td>
+<td>Cerebral palsy</td>
+</tr>
+<tr class="even">
+<td>Cr</td>
+<td>Creatinine</td>
+</tr>
+<tr class="odd">
+<td>CRP</td>
+<td>C-reactive protein</td>
+</tr>
+<tr class="even">
+<td>CSD</td>
+<td>Clinical services department</td>
+</tr>
+<tr class="odd">
+<td>CSF</td>
+<td>Cerebrospinal fluid</td>
+</tr>
+<tr class="even">
+<td>CT</td>
+<td>Computed tomography</td>
+</tr>
+<tr class="odd">
+<td>CXR</td>
+<td>Chest X-ray</td>
+</tr>
+<tr class="even">
+<td>DCT</td>
+<td>Direct Coombs test</td>
+</tr>
+<tr class="odd">
+<td>DD</td>
+<td>Developmental delay</td>
+</tr>
+<tr class="even">
+<td>DIP</td>
+<td>Distal interphalangeal joints</td>
+</tr>
+<tr class="odd">
+<td>DKA</td>
+<td>Diabetic ketoacidosis</td>
+</tr>
+<tr class="even">
+<td>dl</td>
+<td>decilitre</td>
+</tr>
+<tr class="odd">
+<td>DM</td>
+<td>Diabetes mellitus</td>
+</tr>
+<tr class="even">
+<td>Dr</td>
+<td>Doctor</td>
+</tr>
+<tr class="odd">
+<td>DSM-IV</td>
+<td>Diagnostic and statistical manual of mental disorders – 4<sup>th</sup> edition</td>
+</tr>
+<tr class="even">
+<td>DTs</td>
+<td>Delirium tremens</td>
+</tr>
+<tr class="odd">
+<td>DVT</td>
+<td>Deep vein thrombosis</td>
+</tr>
+<tr class="even">
+<td>ECG</td>
+<td>Electrocardiogram</td>
+</tr>
+<tr class="odd">
+<td>ECHO</td>
+<td>Echocardiogram</td>
+</tr>
+<tr class="even">
+<td>EDTA</td>
+<td>Ethylenediamine tetraacetic acid (anticoagulant)</td>
+</tr>
+<tr class="odd">
+<td>EEG</td>
+<td>Electroencephalogram</td>
+</tr>
+<tr class="even">
+<td>EFSTH</td>
+<td>Edward Francis Small teaching hospital</td>
+</tr>
+<tr class="odd">
+<td>eGFR</td>
+<td>Estimated glomerular filtration rate</td>
+</tr>
+<tr class="even">
+<td>EMRS</td>
+<td>Electronic medical record system</td>
+</tr>
+<tr class="odd">
+<td>ENT</td>
+<td>Ear, nose and throat</td>
+</tr>
+<tr class="even">
+<td>ESR</td>
+<td>Erythrocyte sedimentation rate</td>
+</tr>
+<tr class="odd">
+<td>F75</td>
+<td>Formula 75 – WHO formula for malnutrition with 75 kCal/100ml</td>
+</tr>
+<tr class="even">
+<td>F100</td>
+<td>Formula 100 – WHO formula for malnutrition with 100 kCal/100ml</td>
+</tr>
+<tr class="odd">
+<td>FBC</td>
+<td>Full blood count</td>
+</tr>
+<tr class="even">
+<td>FBS</td>
+<td>Fasting blood sugar</td>
+</tr>
+<tr class="odd">
+<td>FSGS</td>
+<td>Focal segmental glomerulosclerosis</td>
+</tr>
+<tr class="even">
+<td>(f)T<sub>4</sub></td>
+<td>(Free) thyroxine</td>
+</tr>
+<tr class="odd">
+<td>(f)T<sub>3</sub></td>
+<td>(Free) triiodothyronine</td>
+</tr>
+<tr class="even">
+<td>g</td>
+<td>Gram(s)</td>
+</tr>
+<tr class="odd">
+<td>GAS</td>
+<td>Group A streptococcus</td>
+</tr>
+<tr class="even">
+<td>GCS</td>
+<td>Glasgow coma scale</td>
+</tr>
+<tr class="odd">
+<td>GDM</td>
+<td>Gestational diabetes mellitus</td>
+</tr>
+<tr class="even">
+<td>GFR</td>
+<td>Glomerular filtration rate</td>
+</tr>
+<tr class="odd">
+<td>GI</td>
+<td>Gastrointestinal</td>
+</tr>
+<tr class="even">
+<td>GORD</td>
+<td>Gastro-oesophageal reflux disease</td>
+</tr>
+<tr class="odd">
+<td>HAV</td>
+<td>Hepatitis A virus</td>
+</tr>
+<tr class="even">
+<td>Hb</td>
+<td>Haemoglobin</td>
+</tr>
+<tr class="odd">
+<td>HbA1c</td>
+<td>Haemoglobin A1c</td>
+</tr>
+<tr class="even">
+<td>HACEK</td>
+<td><em>Haemophilus aphrophilus, Actinobacillus actinomycetemcomitans , Cardiobacterium hominis, Eikenella corrodens, Kingella kingae</em></td>
+</tr>
+<tr class="odd">
+<td>HBsAg</td>
+<td>Hepatitis B surface antigen</td>
+</tr>
+<tr class="even">
+<td>HBV</td>
+<td>Hepatitis B virus</td>
+</tr>
+<tr class="odd">
+<td>HCC</td>
+<td>Hepatocellular carcinoma</td>
+</tr>
+<tr class="even">
+<td>HCG</td>
+<td>Human chorionic gonadotropin</td>
+</tr>
+<tr class="odd">
+<td>HCO<sub>3</sub></td>
+<td>Bicarbonate</td>
+</tr>
+<tr class="even">
+<td>HCV</td>
+<td>Hepatitis C virus</td>
+</tr>
+<tr class="odd">
+<td>HDL</td>
+<td>High density lipoprotein</td>
+</tr>
+<tr class="even">
+<td>HDU</td>
+<td>High dependency unit</td>
+</tr>
+<tr class="odd">
+<td>HELLP</td>
+<td>Haemolysis, elevated liver enzymes, low platelet count</td>
+</tr>
+<tr class="even">
+<td>HHS</td>
+<td>Hyperglycaemic hyperosmolar state</td>
+</tr>
+<tr class="odd">
+<td>Hib</td>
+<td><em>Haemophillus influenzae b</em></td>
+</tr>
+<tr class="even">
+<td>HIV</td>
+<td>Human immunodeficiency virus</td>
+</tr>
+<tr class="odd">
+<td>HP / H pylori</td>
+<td>Helicobacter pylori</td>
+</tr>
+<tr class="even">
+<td>HR</td>
+<td>Heart rate</td>
+</tr>
+<tr class="odd">
+<td>hr</td>
+<td>Hour</td>
+</tr>
+<tr class="even">
+<td>HSV</td>
+<td>Herpes simplex virus</td>
+</tr>
+<tr class="odd">
+<td>HTN</td>
+<td>Hypertension</td>
+</tr>
+<tr class="even">
+<td>Hz</td>
+<td>Hertz</td>
+</tr>
+<tr class="odd">
+<td>ICP</td>
+<td>Intracranial pressure</td>
+</tr>
+<tr class="even">
+<td>IE</td>
+<td>Infective endocarditis</td>
+</tr>
+<tr class="odd">
+<td>im</td>
+<td>Intramuscular</td>
+</tr>
+<tr class="even">
+<td>INR</td>
+<td>International normalised ratio</td>
+</tr>
+<tr class="odd">
+<td>ITU</td>
+<td>Intensive therapy unit</td>
+</tr>
+<tr class="even">
+<td>IV</td>
+<td>Intravenous</td>
+</tr>
+<tr class="odd">
+<td>K</td>
+<td>Potassium</td>
+</tr>
+<tr class="even">
+<td>kg</td>
+<td>Kilogram</td>
+</tr>
+<tr class="odd">
+<td>l</td>
+<td>Litre</td>
+</tr>
+<tr class="even">
+<td>LA</td>
+<td>Left atrium</td>
+</tr>
+<tr class="odd">
+<td>LBP</td>
+<td>Lower back pain</td>
+</tr>
+<tr class="even">
+<td>LFTs</td>
+<td>Liver function tests</td>
+</tr>
+<tr class="odd">
+<td>LGV</td>
+<td>Lymphogranuloma venereum</td>
+</tr>
+<tr class="even">
+<td>LP</td>
+<td>Lumbar puncture</td>
+</tr>
+<tr class="odd">
+<td>L-R</td>
+<td>Left to right</td>
+</tr>
+<tr class="even">
+<td>LRI</td>
+<td>Lower respiratory infection</td>
+</tr>
+<tr class="odd">
+<td>LV</td>
+<td>Left ventricle</td>
+</tr>
+<tr class="even">
+<td>MC&amp;S</td>
+<td>Microscopy, culture and sensitivities</td>
+</tr>
+<tr class="odd">
+<td>MCD</td>
+<td>Minimal change disease</td>
+</tr>
+<tr class="even">
+<td>mcg</td>
+<td>Microgram</td>
+</tr>
+<tr class="odd">
+<td>MCV</td>
+<td>Mean cell volume</td>
+</tr>
+<tr class="even">
+<td>MEWS</td>
+<td>MRC early warning score</td>
+</tr>
+<tr class="odd">
+<td>mEq</td>
+<td>Milliequivalent</td>
+</tr>
+<tr class="even">
+<td>mg</td>
+<td>Milligrams</td>
+</tr>
+<tr class="odd">
+<td>ml</td>
+<td>Millilitres</td>
+</tr>
+<tr class="even">
+<td>mm<sup>3</sup></td>
+<td>Millimetre cubed</td>
+</tr>
+<tr class="odd">
+<td>mmHg</td>
+<td>Milimetres of mercury</td>
+</tr>
+<tr class="even">
+<td>mmol</td>
+<td>Millimole</td>
+</tr>
+<tr class="odd">
+<td>mOsm</td>
+<td>Milliosmole</td>
+</tr>
+<tr class="even">
+<td>MPS</td>
+<td>Mucopolysaccharidoses</td>
+</tr>
+<tr class="odd">
+<td>MR</td>
+<td>Mitral regurgitation</td>
+</tr>
+<tr class="even">
+<td>MRC</td>
+<td>Medical research council</td>
+</tr>
+<tr class="odd">
+<td>MRI</td>
+<td>Magnetic resonance imaging</td>
+</tr>
+<tr class="even">
+<td>MRSA</td>
+<td>Methicillin-resistant <em>staphylococcus aureus</em></td>
+</tr>
+<tr class="odd">
+<td>MST</td>
+<td>Morphine slow release tablets</td>
+</tr>
+<tr class="even">
+<td>MUAC</td>
+<td>Mid upper arm circumference</td>
+</tr>
+<tr class="odd">
+<td>Na</td>
+<td>Sodium</td>
+</tr>
+<tr class="even">
+<td>NPO</td>
+<td>Nil per oral</td>
+</tr>
+<tr class="odd">
+<td>NS</td>
+<td>Nephrotic syndrome</td>
+</tr>
+<tr class="even">
+<td>NSAIDs</td>
+<td>Non-steroidal anti-inflammatory drugs</td>
+</tr>
+<tr class="odd">
+<td>NSTEMI</td>
+<td>Non-ST elevation myocardial infarction</td>
+</tr>
+<tr class="even">
+<td>O<sub>2</sub></td>
+<td>Oxygen</td>
+</tr>
+<tr class="odd">
+<td>OA</td>
+<td>Osteoarthritis</td>
+</tr>
+<tr class="even">
+<td>OCP</td>
+<td>Oral contraceptive pill</td>
+</tr>
+<tr class="odd">
+<td>OD</td>
+<td>Once per day</td>
+</tr>
+<tr class="even">
+<td>OM</td>
+<td>Osteomyelitis</td>
+</tr>
+<tr class="odd">
+<td>OM</td>
+<td>Otitis media</td>
+</tr>
+<tr class="even">
+<td>OME</td>
+<td>Otitis media with effusion</td>
+</tr>
+<tr class="odd">
+<td>OPD</td>
+<td>Outpatient department</td>
+</tr>
+<tr class="even">
+<td>P</td>
+<td>Plasmodium</td>
+</tr>
+<tr class="odd">
+<td>PA</td>
+<td>Pulmonary artery</td>
+</tr>
+<tr class="even">
+<td>PCR</td>
+<td>Polymerase chain reaction</td>
+</tr>
+<tr class="odd">
+<td>PCV</td>
+<td>Packed cell volume</td>
+</tr>
+<tr class="even">
+<td>PDA</td>
+<td>Patent ductus arteriosus</td>
+</tr>
+<tr class="odd">
+<td>PE</td>
+<td>Pulmonary embolism</td>
+</tr>
+<tr class="even">
+<td>PEFR</td>
+<td>Peak expiratory flow rate</td>
+</tr>
+<tr class="odd">
+<td>PID</td>
+<td>Pelvic inflammatory disease</td>
+</tr>
+<tr class="even">
+<td>PIP</td>
+<td>Proximal interphalangeal joints</td>
+</tr>
+<tr class="odd">
+<td>PO</td>
+<td>Per oral</td>
+</tr>
+<tr class="even">
+<td>PR</td>
+<td>Per rectum</td>
+</tr>
+<tr class="odd">
+<td>PR</td>
+<td>Pulse rate</td>
+</tr>
+<tr class="even">
+<td>PRN</td>
+<td>As required</td>
+</tr>
+<tr class="odd">
+<td>PS</td>
+<td>Pulmonary stenosis</td>
+</tr>
+<tr class="even">
+<td>PSA</td>
+<td>Prostate specific antigen</td>
+</tr>
+<tr class="odd">
+<td>PUD</td>
+<td>Peptic ulcer disease</td>
+</tr>
+<tr class="even">
+<td>QDS</td>
+<td>Four times per day</td>
+</tr>
+<tr class="odd">
+<td>QRISK</td>
+<td>Q research cardiovascular risk score</td>
+</tr>
+<tr class="even">
+<td>qSOFA</td>
+<td>Quick sequential organ failure assessment score</td>
+</tr>
+<tr class="odd">
+<td>RDT</td>
+<td>Rapid diagnostic test (for malaria)</td>
+</tr>
+<tr class="even">
+<td>RF</td>
+<td>Rheumatoid factor</td>
+</tr>
+<tr class="odd">
+<td>RHD</td>
+<td>Rheumatic heart disease</td>
+</tr>
+<tr class="even">
+<td>RNA</td>
+<td>Ribonucleic acid</td>
+</tr>
+<tr class="odd">
+<td>ROSIER</td>
+<td>Recognition of stroke in the emergency room</td>
+</tr>
+<tr class="even">
+<td>RPR</td>
+<td>Rapid plasmin reagent</td>
+</tr>
+<tr class="odd">
+<td>RR</td>
+<td>Respiratory rate</td>
+</tr>
+<tr class="even">
+<td>RTA</td>
+<td>Road traffic accident</td>
+</tr>
+<tr class="odd">
+<td>RTUF</td>
+<td>Ready to use food</td>
+</tr>
+<tr class="even">
+<td>RVOTO</td>
+<td>Right ventricular outflow tract obstruction</td>
+</tr>
+<tr class="odd">
+<td>SA</td>
+<td>Septic arthritis</td>
+</tr>
+<tr class="even">
+<td>SAAG</td>
+<td>Serum ascites albumin gradient</td>
+</tr>
+<tr class="odd">
+<td>SAH</td>
+<td>Subarachnoid haemorrhage</td>
+</tr>
+<tr class="even">
+<td>SBP</td>
+<td>Spontaneous bacterial peritonitis</td>
+</tr>
+<tr class="odd">
+<td>sc</td>
+<td>Subcutaneous</td>
+</tr>
+<tr class="even">
+<td>SCORTEN</td>
+<td>Severity of illness score for toxic epidermal necrolysis</td>
+</tr>
+<tr class="odd">
+<td>SIADH</td>
+<td>Syndrome of inappropriate anti-diuretic hormone</td>
+</tr>
+<tr class="even">
+<td>SJS</td>
+<td>Stevens-Johnson syndrome</td>
+</tr>
+<tr class="odd">
+<td>SLE</td>
+<td>Systemic lupus erythematosus</td>
+</tr>
+<tr class="even">
+<td>SOP</td>
+<td>Standard operating procedure</td>
+</tr>
+<tr class="odd">
+<td>SpO<sub>2</sub></td>
+<td>Oxygen saturations</td>
+</tr>
+<tr class="even">
+<td>SSRI</td>
+<td>Selective serotonin reuptake inhibitor</td>
+</tr>
+<tr class="odd">
+<td>Stat</td>
+<td>Statim (Instantly/Immediately)</td>
+</tr>
+<tr class="even">
+<td>STEMI</td>
+<td>ST elevation myocardial infarction</td>
+</tr>
+<tr class="odd">
+<td>STI</td>
+<td>Sexually transmitted infection</td>
+</tr>
+<tr class="even">
+<td>SZREC</td>
+<td>Sheikh Zayed regional eyecare centre</td>
+</tr>
+<tr class="odd">
+<td>T or Temp</td>
+<td>Temperature</td>
+</tr>
+<tr class="even">
+<td>TB</td>
+<td>Tuberculosis</td>
+</tr>
+<tr class="odd">
+<td>TB4</td>
+<td>Tuberculosis combination tablets with 4 drugs</td>
+</tr>
+<tr class="even">
+<td>TBW</td>
+<td>Total body water</td>
+</tr>
+<tr class="odd">
+<td>TDD</td>
+<td>Total daily dose</td>
+</tr>
+<tr class="even">
+<td>TDS</td>
+<td>Three times per day</td>
+</tr>
+<tr class="odd">
+<td>TEN</td>
+<td>Toxic epidermal necrolysis</td>
+</tr>
+<tr class="even">
+<td>TM</td>
+<td>Tympanic membrane</td>
+</tr>
+<tr class="odd">
+<td>TOF</td>
+<td>Tetralogy of Fallot</td>
+</tr>
+<tr class="even">
+<td>TPHA</td>
+<td>Treponema pallidum hemagglutination assay</td>
+</tr>
+<tr class="odd">
+<td>TSH</td>
+<td>Thyroid-stimulating hormone</td>
+</tr>
+<tr class="even">
+<td>U</td>
+<td>Units</td>
+</tr>
+<tr class="odd">
+<td>UA</td>
+<td>Unstable angina</td>
+</tr>
+<tr class="even">
+<td>U&amp;Es</td>
+<td>Urea and electrolytes</td>
+</tr>
+<tr class="odd">
+<td>UK</td>
+<td>United Kingdom</td>
+</tr>
+<tr class="even">
+<td>URTIs</td>
+<td>Upper respiratory tract infections</td>
+</tr>
+<tr class="odd">
+<td>US</td>
+<td>Ultrasound</td>
+</tr>
+<tr class="even">
+<td>UTI</td>
+<td>Urinary tract infection</td>
+</tr>
+<tr class="odd">
+<td>VDRL</td>
+<td>Venereal disease research laboratory test</td>
+</tr>
+<tr class="even">
+<td>VLCFA</td>
+<td>Very long chain fatty acids</td>
+</tr>
+<tr class="odd">
+<td>VSD</td>
+<td>Ventricular septal defect</td>
+</tr>
+<tr class="even">
+<td>WHO</td>
+<td>World health organisation</td>
+</tr>
+<tr class="odd">
+<td>WHZ</td>
+<td>Weight for height Z score</td>
+</tr>
+<tr class="even">
+<td>XR</td>
+<td>X-ray</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Written by:</strong></th>
+<th>Name: Karen Forrest</th>
+<th>Date: 31 May 2019</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reviewed by:</strong></td>
+<td>Name:</td>
+<td>Date:</td>
+</tr>
+<tr class="even">
+<td><strong>Version:</strong></td>
+<td><strong>Change history:</strong></td>
+<td><strong>Review due date:</strong></td>
+</tr>
+<tr class="odd">
+<td>1.0</td>
+<td>New document</td>
+<td>31 July 2020</td>
+</tr>
+<tr class="even">
+<td>2.0</td>
+<td>Updated with extra abbreviations and existence of mobile app</td>
+<td>31 May 2021</td>
+</tr>
+<tr class="odd">
+<td>Review Comments (<em>if applicable)</em></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
+</body>
+</html>

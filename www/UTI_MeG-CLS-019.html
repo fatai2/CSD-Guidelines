@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--
+==============================================================================
+           "GitHub HTML5 Pandoc Template" v2.1 — by Tristano Ajmone           
+==============================================================================
+Copyright © Tristano Ajmone, 2017, MIT License (MIT). Project's home:
+
+- https://github.com/tajmone/pandoc-goodies
+
+The CSS in this template reuses source code taken from the following projects:
+
+- GitHub Markdown CSS: Copyright © Sindre Sorhus, MIT License (MIT):
+  https://github.com/sindresorhus/github-markdown-css
+
+- Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
+  http://primercss.io/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The MIT License 
+
+Copyright (c) Tristano Ajmone, 2017 (github.com/tajmone/pandoc-goodies)
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+Copyright (c) 2017 GitHub Inc.
+
+"GitHub Pandoc HTML5 Template" is Copyright (c) Tristano Ajmone, 2017, released
+under the MIT License (MIT); it contains readaptations of substantial portions
+of the following third party softwares:
+
+(1) "GitHub Markdown CSS", Copyright (c) Sindre Sorhus, MIT License (MIT).
+(2) "Primer CSS", Copyright (c) 2016 GitHub Inc., MIT License (MIT).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+==============================================================================-->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>UTI MeG-CLS-019</title>
+  <style type="text/css">
+@charset "UTF-8";.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5;word-wrap:break-word;box-sizing:border-box;min-width:200px;max-width:980px;margin:0 auto;padding:45px}.markdown-body a{color:#0366d6;background-color:transparent;text-decoration:none;-webkit-text-decoration-skip:objects}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body a:hover{text-decoration:underline}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body strong{font-weight:600}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1{font-size:2em;margin:.67em 0;padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body h2{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eaecef}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body img{border-style:none}.markdown-body svg:not(:root){overflow:hidden}.markdown-body hr{box-sizing:content-box;height:.25em;margin:24px 0;padding:0;overflow:hidden;background-color:#e1e4e8;border:0}.markdown-body hr::before{display:table;content:""}.markdown-body hr::after{display:table;clear:both;content:""}.markdown-body input{margin:0;overflow:visible;font:inherit;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dd{margin-left:0}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}.markdown-body pre{font:12px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;word-wrap:normal}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;border-spacing:0;border-collapse:collapse}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body code{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body code::after,.markdown-body code::before{letter-spacing:-.2em;content:" "}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code::after,.markdown-body pre code::before{content:normal}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{box-shadow:inset 0 -1px 0 #959da5;display:inline-block;padding:3px 5px;font:11px/10px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;color:#444d56;vertical-align:middle;background-color:#fcfcfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body::before{display:table;content:""}.markdown-body::after{display:table;clear:both;content:""}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.Alert,.Error,.Note,.Success,.Warning{padding:11px;margin-bottom:24px;border-style:solid;border-width:1px;border-radius:4px}.Alert p,.Error p,.Note p,.Success p,.Warning p{margin-top:0}.Alert p:last-child,.Error p:last-child,.Note p:last-child,.Success p:last-child,.Warning p:last-child{margin-bottom:0}.Alert{color:#246;background-color:#e2eef9;border-color:#bac6d3}.Warning{color:#4c4a42;background-color:#fff9ea;border-color:#dfd8c2}.Error{color:#911;background-color:#fcdede;border-color:#d2b2b2}.Success{color:#22662c;background-color:#e2f9e5;border-color:#bad3be}.Note{color:#2f363d;background-color:#f6f8fa;border-color:#d5d8da}.Alert h1,.Alert h2,.Alert h3,.Alert h4,.Alert h5,.Alert h6{color:#246;margin-bottom:0}.Warning h1,.Warning h2,.Warning h3,.Warning h4,.Warning h5,.Warning h6{color:#4c4a42;margin-bottom:0}.Error h1,.Error h2,.Error h3,.Error h4,.Error h5,.Error h6{color:#911;margin-bottom:0}.Success h1,.Success h2,.Success h3,.Success h4,.Success h5,.Success h6{color:#22662c;margin-bottom:0}.Note h1,.Note h2,.Note h3,.Note h4,.Note h5,.Note h6{color:#2f363d;margin-bottom:0}.Alert h1:first-child,.Alert h2:first-child,.Alert h3:first-child,.Alert h4:first-child,.Alert h5:first-child,.Alert h6:first-child,.Error h1:first-child,.Error h2:first-child,.Error h3:first-child,.Error h4:first-child,.Error h5:first-child,.Error h6:first-child,.Note h1:first-child,.Note h2:first-child,.Note h3:first-child,.Note h4:first-child,.Note h5:first-child,.Note h6:first-child,.Success h1:first-child,.Success h2:first-child,.Success h3:first-child,.Success h4:first-child,.Success h5:first-child,.Success h6:first-child,.Warning h1:first-child,.Warning h2:first-child,.Warning h3:first-child,.Warning h4:first-child,.Warning h5:first-child,.Warning h6:first-child{margin-top:0}h1.title,p.subtitle{text-align:center}h1.title.followed-by-subtitle{margin-bottom:0}p.subtitle{font-size:1.5em;font-weight:600;line-height:1.25;margin-top:0;margin-bottom:16px;padding-bottom:.3em}div.line-block{white-space:pre-line}
+  </style>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<article class="markdown-body">
+<h1 id="urinary-tract-infection">Urinary Tract Infection</h1>
+<h2 id="executive-summary"><em>Executive Summary</em></h2>
+<h2 id="introduction">Introduction</h2>
+<p>Urinary tract infection (UTI) is the most common bacterial disease in childhood. Incidence is high among febrile children and recurrence is also common (up to 50%). It is also one of the most commonly diagnosed infections in both hospitalized and community-dwelling older adults. The definition of symptomatic UTI in adults generally requires the presence of localized genitourinary symptoms caused by bacteria present in the urine. In children, UTIs are associated with primary vesico-ureteral reflux; the resulting reflux nephropathy (renal scars) is a possible cause of childhood hypertension and chronic kidney disease.</p>
+<p>This guideline covers management of uncomplicated and complicated UTI in all age groups and pregnant women.</p>
+<h2 id="target-users">Target users</h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Nurses</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Doctors</p>
+</div></li>
+</ul>
+<h2 id="target-area-of-use">Target area of use </h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Gate Clinic</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Outpatient Department</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Ward</p>
+</div></li>
+</ul>
+<h2 id="key-areas-of-focus-new-additions-changes">Key areas of focus / New additions / Changes </h2>
+<p>This guideline describes the features of UTI in different clinical populations and stratifies the treatment accordingly.</p>
+<p>Diagnosis of UTI is particularly challenging in children. Dipstick urine testing is useful in children and non-pregnant women. Non-pregnant women with multiple UTI features can receive empirical therapy without dipstick testing. Urine microscopy, culture and sensitivity can provide definitive diagnosis and guide antibiotic therapy.</p>
+<p>Most UTI can be treated on outpatient basis with oral antibiotics. However, complicated or severe infections require inpatient therapy with parenteral antibiotics.</p>
+<h2 id="limitations">Limitations </h2>
+<p>Urine culture and sensitivity are currently available only at Fajara. In addition, patients requiring prolonged in-patient care for pyelonephritis or complicated UTI cannot be managed at Keneba or Basse.</p>
+<h2 id="presenting-symptoms-and-signs">Presenting symptoms and signs</h2>
+<p>Symptoms of lower UTI</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Dysuria</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Frequency of micturition</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Urgency</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Cloudy urine</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Coca-cola coloured urine</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Malodorous urine</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Lower abdominal discomfort</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Rectal pain in men</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>New onset of incontinence and/or enuresis</p>
+</div></li>
+</ul>
+<p>Symptoms of an upper tract UTI include:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Pain and in the upper back and sides</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Chills</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Fever</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Nausea</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Vomiting</p>
+</div></li>
+</ul>
+<p>Patients with fever, back pain or flank pain may have pyelonephritis and should be referred to the doctor.</p>
+<p>The presence of vaginal itch or discharge make another diagnosis more likely. Patients with these symptoms need a speculum and pelvic examination. Refer to the doctor if you cannot do this.</p>
+<p>Elderly patients are more difficult to diagnose – so if you are unsure refer them to the doctor.</p>
+<p>Infants and young children: Findings are typically non-specific in infants and young children. Unexplained high fever is the most common presenting symptom for UTI in infants. Others may include fever, malaise, vomiting, lethargy, irritability, poor feeding and abdominal pain. Symptoms become more specific as the child grows older.</p>
+<p>Generally, female sex is a major risk factor for UTI but uncircumcised male infants have even higher risk due to physiologic phimosis.</p>
+<p>Constipation is a risk factor for UTI in young children and should be specifically asked about.</p>
+<h2 id="examination-findings">Examination findings</h2>
+<p>Patients with uncomplicated UTI may appear uncomfortable but typically are not toxic. Suprapubic tenderness may be present. The presence of toxic signs such as fever, chills, nausea, and vomiting suggests pyelonephritis. Costovertebral tenderness also suggests pyelonephritis.</p>
+<p><strong>Important things to look for</strong></p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Costovertebral tenderness</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Suprapubic tenderness</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Features of Chronic Kidney Disease</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>High blood pressure</p>
+</div></li>
+</ul>
+<p><strong>Differential diagnoses</strong></p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Nephrolithiasis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Appendicitis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Glomerulonephritis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Urethritis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Gastroenteritis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Schistosomiasis</p>
+</div></li>
+</ul>
+<h2 id="investigations">Investigations</h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Dipstick Urinalysis: Nitrite and leucocyte esterase are the most useful markers. Haematuria and proteinuria may be present.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Urine microscopy, culture and sensitivity:</p>
+</div>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Asymptomatic bacteriuria is defined as the presence of bacteria in the urine in quantities of 10<sup>5</sup> colony forming units per milliliter or more in 2 consecutive urine specimens in women or 1 urine specimen in men in the absence of clinical signs and symptoms suggestive of a UTI. It is more common in older women and in diabetic patients. This does not necessarily lead to illness and does not need to be treated except in pregnant women.</p>
+</div></li>
+</ul></li>
+<li><div data-custom-style="List Paragraph">
+<p>Full Blood Count: useful in complicated UTI, pyelonephritis.</p>
+</div></li>
+</ul>
+<h2 id="management-in-gate-clinic">Management in Gate Clinic</h2>
+<p>Advise all patients to drink plenty of water.</p>
+<h3 id="non-pregnant-women-16-years-and-older">Non-pregnant women (16 years and older)</h3>
+<p>Women with dysuria and frequency or who have 3 or more symptoms of UTI (and no symptoms of pyelonephritis) can be diagnosed clinically without any further investigation. Treat with nitrofurantoin 100 mg BD for 3 days.</p>
+<p>Women with 1 or 2 symptoms of UTI should provide a urine sample for dipstick. Any symptomatic woman whose dipstick is positive for leukocytes or nitrites should be treated for UTI as above.</p>
+<h3 id="pregnant-women">Pregnant women</h3>
+<p>Urine dipstick is not sufficiently sensitive for UTI in pregnant women. Women with symptoms of UTI should be treated with nitrofurantoin 100 mg BD for 7 days. Oral amoxicillin 500 mg TDS for 7 days is preferable for pregnant women already at term.</p>
+<p>A urine sample should be sent to the lab for MC&amp;S. Ask the patient to return to the clinic after the course of antibiotics. A further urine MC&amp;S should be sent to ensure the infection has been cured.</p>
+<h3 id="men-16-years-and-older">Men (16 years and older)</h3>
+<p>Urine dipstick is not useful in men. Send a sample of urine for MC&amp;S. Treat empirically with Ciprofloxacin 500 mg BD for 10 days. Ask the patient to return after this if they are not better. <em>Refer</em> the patient to the doctor if they return.</p>
+<h3 id="children-16-years">Children (&lt;16 years)</h3>
+<p>Children under 3 months should be <em>referred</em> to the doctor.</p>
+<p>Children over 3 months, but under 3 years who have specific urinary symptoms should be assumed to have a UTI. Urine should be sent for MC&amp;S. Treat as described below. <em>Refer</em> other children in this age group to the doctor.</p>
+<p>Children over 3 years old in whom UTI is suspected should provide a urine sample for dipstick. If the dipstick is positive for nitrites and leukocytes, treat for UTI. If it is positive for nitrites alone, treat but also send a sample for MC&amp;S. If the dipstick is either positive only for leukocytes or negative, then <em>refer</em> to the doctor.</p>
+<p>Treat children with amoxicillin 30 mg/kg (max 500 mg) TDS for 3 days. Tell the carer to bring the child back if they do not improve with this treatment. <em>Refer</em> all returning children to the doctor.</p>
+<p><strong><span class="underline">Refer to the Doctor in OPD if:</span></strong></p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>patients with signs of pyelonephritis: fever, back pain or flank pain.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>women with vaginal itch or discharge.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>elderly patients where the diagnosis is not clear.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>all children under 3 months</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>children over 3 months and under 3 years where the diagnosis is not clear.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>children over 3 years whose urine dipstick is not positive for nitrites.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>all patients who return to the clinic because their symptoms have not resolved with first line treatment.</p>
+</div></li>
+</ul>
+<h2 id="management-in-opd">Management in OPD</h2>
+<p><strong><span class="underline">Children between 3 months and 3 years:</span></strong></p>
+<p>Treat UTI if either nitrite or leucocyte esterase is positive. Review with urine MC&amp;S.</p>
+<p><strong><span class="underline">Children over 3 years with negative nitrite on dipstick</span></strong></p>
+<p>If leucocyte esterase is also negative, do not treat as UTI and do not send sample for urine MC&amp;S. Explore alternative diagnoses.</p>
+<p>If leucocyte esterase is positive, send a sample for urine MC&amp;S. Consider starting antibiotics only if the child also has definite and specific UTI symptoms.</p>
+<p><strong><span class="underline">Pyelonephritis:</span></strong></p>
+<p>Commence antibiotics after sending samples for urine MC&amp;S. Oral antibiotics are preferred unless the patient cannot tolerate them or is severely ill.</p>
+<p>For non-pregnant women and men (16 years and older), give oral ciprofloxacin 500 mg BD for 7 days. Pregnant women should be admitted and given intravenous antibiotics initially.</p>
+<p><strong><span class="underline">Patients returning without improvement:</span></strong></p>
+<p>Review results of urine MC&amp;S and alter antibiotic prescription accordingly if necessary. Consider alternative diagnosis if culture is negative.</p>
+<p><strong><span class="underline">Children with recurrent UTI:</span></strong></p>
+<p>A child is considered to have recurrent UTI if they have had 2 UTIs where at least one episode was acute pyelonephritis. Children with 3 or more episodes of lower UTI are also considered as having recurrent UTI. Such patients should receive urinary tract ultrasonography within 6 weeks of resolution of last episode.</p>
+<h2 id="management-on-the-ward">Management on the Ward</h2>
+<p>Patients should be admitted to the ward if any of the following is present :</p>
+<ul>
+<li><p>Acutely ill patient / signs of sepsis</p></li>
+<li><p>Signs of urinary obstruction or significant underlying disease (such as diabetes, heart failure, chronic lung disease, severe immunosuppression)</p></li>
+<li><p>Not tolerating oral fluids or medications</p></li>
+<li><p>Infants younger than 3 months with febrile UTI</p></li>
+</ul>
+<p><strong><span class="underline">Children under 3 months of age</span></strong>:</p>
+<p>Samples should be sent for urine MC&amp;S and a full blood count. Blood culture and a lumbar puncture should be performed before starting on IV/IM Ampicillin and IV Gentamicin. Tailor antibiotic therapy to microbiology results. When the child is afebrile for at least 24 hours, oral antibiotics can then be given to complete 14 days of therapy.</p>
+<p><strong><span class="underline">Pyelonephritis/ Complicated UTIs:</span></strong></p>
+<p>Send samples for blood culture, urine MC&amp;S and commence empirical parenteral antibiotics. Pregnant patients should receive IV ceftriaxone 1 – 2 g daily. Older children, men and non-pregnant women should be placed on IV Ampicillin 1 g 8 hourly plus IV Gentamicin 5-7.5 mg/kg once daily</p>
+<p>Antibiotic regimens should be reviewed using microbiology results. With clinical improvement, patients can be stepped down to oral therapy. Total duration of antibiotic therapy should be 14 days unless other complications occur.</p>
+<p>Patients who fail to improve after 48 hours (children) or 72 hours (adults) should receive a urinary tract ultrasound scan.</p>
+<h2 id="key-issues-for-nursing-care">Key Issues for Nursing care</h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Catheter specimen samples are the best for urine MC&amp;S in children unable to understand instructions. However, where this is not feasible, sterile collection bags/pads can be used.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Dipstick testing should not be used for detecting urinary tract infections in catheterized adults.</p>
+</div></li>
+</ul>
+<h2 id="references">References</h2>
+<p>Tullus K. Difficulties in diagnosing urinary tract infections in small children. Pediatr nephrol 2011;26:1923-6.</p>
+<p>Salo J, Ikaheimo R, Tapiainen I Uhari M. Childhood urinary tract infection as a cause of chronic kidney disease. Pediatrics 2011;128:840-7.</p>
+<p>National Institute of Health and Care Excellence. Fever in under 5s: assessment and initial management. Available from: <a href="https://www.nice.org.uk/guidance/cg160"><span data-custom-style="Hyperlink">https://www.nice.org.uk/guidance/cg160</span></a> Accessed: 1<sup>st</sup> May, 2019</p>
+<p>National Institute of Health and Care Excellence. Urinary tract infection (lower): antimicrobial prescribing. Available from: <a href="https://www.nice.org.uk/guidance/ng109"><span data-custom-style="Hyperlink">https://www.nice.org.uk/guidance/ng109</span></a> Accessed: 1<sup>st</sup> May, 2019</p>
+<p>National Institute of Health and Care Excellence. Pyelonephritis (acute): antimicrobial prescribing Available from: <a href="https://www.nice.org.uk/guidance/ng111"><span data-custom-style="Hyperlink">https://www.nice.org.uk/guidance/ng111</span></a> Accessed: 1<sup>st</sup> May, 2019</p>
+<p>Ramakrishnan K, Scheid DC. Diagnosis and Management of Acute Pyelonephritis in Adults. Am Fam Physician. 2005 Mar 1;71(5):933-942.</p>
+<p>Colgan R, Williams M. Diagnosis and Treatment of Acute Pyelonephritis in Women. Am Fam Physician. 2011 Sep 1;84(5):519-526.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Written by:</strong></th>
+<th>Name: Yorro Bah</th>
+<th>Date: 1<sup>st</sup> May 2019</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reviewed by:</strong></td>
+<td>Name: Fatai Akemokwe</td>
+<td>Date: 1<sup>st</sup> May 2019</td>
+</tr>
+<tr class="even">
+<td><strong>Version:</strong></td>
+<td><strong>Change history:</strong></td>
+<td><strong>Review due date:</strong></td>
+</tr>
+<tr class="odd">
+<td>1.0</td>
+<td>New document</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2.0</td>
+<td>Updated, scope broadened and transferred to new template</td>
+<td>31 May 2021</td>
+</tr>
+<tr class="odd">
+<td>Review Comments (<em>if applicable)</em></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
+</body>
+</html>

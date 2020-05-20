@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "CSD Guidelines",
+    "slug": "CSDGuidelines",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "4.0.0",
+    "orientation": "default",
+    "icon": "./assets/adaptive_icon_back.png",
+    "splash": {
+      "image": "./assets/twitter.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#1ba1f2"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.gmail.drfatai998.csdguidelines",
+      "versionCode": 40000,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive_icon_fore.png",
+        "backgroundImage": "./assets/adaptive_icon_back.png"
+      },
+      "permissions": []
+    },
+    "description": "The Official Clinical Guidelines app of the Clinical Services Department of the MRC Unit The Gambia at LSHTM"
+  }
+}

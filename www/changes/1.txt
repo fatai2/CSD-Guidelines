@@ -1,0 +1,1 @@
+18th May 2020: App changed to Expo framework from Cordova/Phonegap.

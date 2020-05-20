@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--
+==============================================================================
+           "GitHub HTML5 Pandoc Template" v2.1 — by Tristano Ajmone           
+==============================================================================
+Copyright © Tristano Ajmone, 2017, MIT License (MIT). Project's home:
+
+- https://github.com/tajmone/pandoc-goodies
+
+The CSS in this template reuses source code taken from the following projects:
+
+- GitHub Markdown CSS: Copyright © Sindre Sorhus, MIT License (MIT):
+  https://github.com/sindresorhus/github-markdown-css
+
+- Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
+  http://primercss.io/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The MIT License 
+
+Copyright (c) Tristano Ajmone, 2017 (github.com/tajmone/pandoc-goodies)
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+Copyright (c) 2017 GitHub Inc.
+
+"GitHub Pandoc HTML5 Template" is Copyright (c) Tristano Ajmone, 2017, released
+under the MIT License (MIT); it contains readaptations of substantial portions
+of the following third party softwares:
+
+(1) "GitHub Markdown CSS", Copyright (c) Sindre Sorhus, MIT License (MIT).
+(2) "Primer CSS", Copyright (c) 2016 GitHub Inc., MIT License (MIT).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+==============================================================================-->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>DKA MeG-CLS-021</title>
+  <style type="text/css">
+@charset "UTF-8";.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5;word-wrap:break-word;box-sizing:border-box;min-width:200px;max-width:980px;margin:0 auto;padding:45px}.markdown-body a{color:#0366d6;background-color:transparent;text-decoration:none;-webkit-text-decoration-skip:objects}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body a:hover{text-decoration:underline}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body strong{font-weight:600}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1{font-size:2em;margin:.67em 0;padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body h2{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eaecef}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body img{border-style:none}.markdown-body svg:not(:root){overflow:hidden}.markdown-body hr{box-sizing:content-box;height:.25em;margin:24px 0;padding:0;overflow:hidden;background-color:#e1e4e8;border:0}.markdown-body hr::before{display:table;content:""}.markdown-body hr::after{display:table;clear:both;content:""}.markdown-body input{margin:0;overflow:visible;font:inherit;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dd{margin-left:0}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}.markdown-body pre{font:12px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;word-wrap:normal}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;border-spacing:0;border-collapse:collapse}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body code{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body code::after,.markdown-body code::before{letter-spacing:-.2em;content:" "}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code::after,.markdown-body pre code::before{content:normal}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{box-shadow:inset 0 -1px 0 #959da5;display:inline-block;padding:3px 5px;font:11px/10px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;color:#444d56;vertical-align:middle;background-color:#fcfcfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body::before{display:table;content:""}.markdown-body::after{display:table;clear:both;content:""}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.Alert,.Error,.Note,.Success,.Warning{padding:11px;margin-bottom:24px;border-style:solid;border-width:1px;border-radius:4px}.Alert p,.Error p,.Note p,.Success p,.Warning p{margin-top:0}.Alert p:last-child,.Error p:last-child,.Note p:last-child,.Success p:last-child,.Warning p:last-child{margin-bottom:0}.Alert{color:#246;background-color:#e2eef9;border-color:#bac6d3}.Warning{color:#4c4a42;background-color:#fff9ea;border-color:#dfd8c2}.Error{color:#911;background-color:#fcdede;border-color:#d2b2b2}.Success{color:#22662c;background-color:#e2f9e5;border-color:#bad3be}.Note{color:#2f363d;background-color:#f6f8fa;border-color:#d5d8da}.Alert h1,.Alert h2,.Alert h3,.Alert h4,.Alert h5,.Alert h6{color:#246;margin-bottom:0}.Warning h1,.Warning h2,.Warning h3,.Warning h4,.Warning h5,.Warning h6{color:#4c4a42;margin-bottom:0}.Error h1,.Error h2,.Error h3,.Error h4,.Error h5,.Error h6{color:#911;margin-bottom:0}.Success h1,.Success h2,.Success h3,.Success h4,.Success h5,.Success h6{color:#22662c;margin-bottom:0}.Note h1,.Note h2,.Note h3,.Note h4,.Note h5,.Note h6{color:#2f363d;margin-bottom:0}.Alert h1:first-child,.Alert h2:first-child,.Alert h3:first-child,.Alert h4:first-child,.Alert h5:first-child,.Alert h6:first-child,.Error h1:first-child,.Error h2:first-child,.Error h3:first-child,.Error h4:first-child,.Error h5:first-child,.Error h6:first-child,.Note h1:first-child,.Note h2:first-child,.Note h3:first-child,.Note h4:first-child,.Note h5:first-child,.Note h6:first-child,.Success h1:first-child,.Success h2:first-child,.Success h3:first-child,.Success h4:first-child,.Success h5:first-child,.Success h6:first-child,.Warning h1:first-child,.Warning h2:first-child,.Warning h3:first-child,.Warning h4:first-child,.Warning h5:first-child,.Warning h6:first-child{margin-top:0}h1.title,p.subtitle{text-align:center}h1.title.followed-by-subtitle{margin-bottom:0}p.subtitle{font-size:1.5em;font-weight:600;line-height:1.25;margin-top:0;margin-bottom:16px;padding-bottom:.3em}div.line-block{white-space:pre-line}
+  </style>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<article class="markdown-body">
+<h1 id="diabetic-ketoacidosis-dka">Diabetic Ketoacidosis (DKA)</h1>
+<h2 id="executive-summary"><em>Executive summary</em></h2>
+<h2 id="introduction">Introduction</h2>
+<p>Diabetic ketoacidosis is an acute, major, life-threatening complication of diabetes that mainly occurs in patients with type 1 diabetes, but it is not uncommon in some patients with type 2 diabetes. This condition is a complex disordered metabolic state characterized by hyperglycaemia, acidosis and ketonuria.</p>
+<p>This might be the <strong>FIRST</strong> presentation of diabetes mellitus.</p>
+<h2 id="target-user">Target User</h2>
+<ul>
+<li><p>Doctors</p></li>
+<li><p>Nurses</p></li>
+</ul>
+<h2 id="target-area-of-use">Target area of use </h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Ward</p>
+</div></li>
+</ul>
+<h2 id="key-areas-of-focusnew-additionschanges">Key areas of focus/new additions/changes</h2>
+<p>This guideline addresses the management of DKA in our setting. It does not address ongoing management of diabetes after the initial admission.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Unavailability of blood gas analyzers means we are unable to get blood pH values and therefore have to wait at least 2 hours to get bicarbonate results in order to confirm the diagnosis.</p>
+<h2 id="presenting-symptoms-and-signs">Presenting symptoms and signs</h2>
+<p>Polydipsia, polyphagia, malaise, generalized weakness, nausea, vomiting, weight loss, decreased perspiration, altered consciousness, recurrent boils, persisting vaginal yeast infection, blurred vision, excessive tiredness</p>
+<p><strong>WITH</strong></p>
+<p>Fasting blood glucose of 7.0 mmol/L or higher</p>
+<p><strong>OR</strong></p>
+<p>A two hour post prandial glucose level of 11.1 mmol/l or higher</p>
+<p><strong>OR</strong></p>
+<p>A random blood glucose of 11.1 mmol/l or higher plus the classic symptoms of diabetes mellitus.</p>
+<p><strong>AND</strong></p>
+<p>Presence of ketones of ++ and above in urine</p>
+<p><strong>AND</strong></p>
+<p>Acidosis with serum bicarbonate of less than 18 mmol/L or blood pH less than 7.3</p>
+<h2 id="examination-findings">Examination findings</h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Looks sick</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Dry skin</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Laboured respiration</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Dry mucous membrane</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Decreased skin turgor</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Decreased reflexes</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Characteristic acetone breath</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Tachycardia</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Hypotension</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Tachypnea</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Hypotension</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Tachypnoea</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Hypothermia</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Fever, if infection is present</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Confusion</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Coma</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Abdominal tenderness</p>
+</div></li>
+</ul>
+<h2 id="differential-diagnosis">Differential Diagnosis</h2>
+<p>Many of these may also precipitate DKA; beware of co-existing disease processes</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Hypoglycaemia</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Subdural hematoma</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Stroke</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Cerebral malaria</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Meningitis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Sepsis</p>
+</div></li>
+</ul>
+<h2 id="management">Management </h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p><strong>Call for help</strong> (other doctors, senior nurses).</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p><strong>Check Airway, Breathing and Circulation.</strong> Ensure the patient is alive!</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p><strong>Get two intravenous access</strong> with the widest cannula possible for the patient (try sizes 20 pink cannula, 22 blue cannula for children and 18 green cannula, 16 grey cannula for adults).</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p><strong>If in shock, give 10 mls/kg up to 1 litre of 0.9% normal saline after determining true weight. Give this over 30 minutes.</strong></p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Take samples: Blood: K, Na, HCO<sub>3</sub>, FBC, blood culture, Urine dipstick, urine: culture &amp; sensitivity.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Chest X-ray</p>
+</div></li>
+</ul>
+<h3 id="immediate-treatment-in-children">Immediate treatment in children</h3>
+<p>Treat DKA with oral fluids and subcutaneous insulin <strong>only</strong> if the child or young person is alert, not nauseated or vomiting, and not clinically dehydrated. If DKA is treated with oral fluids and subcutaneous insulin, ensure that the child or young person is recovering by monitoring for resolution of ketonaemia and acidosis.</p>
+<p>Treat DKA with intravenous fluids and intravenous insulin if the child or young person <strong>is not alert, is nauseated or vomiting or is clinically dehydrated.</strong></p>
+<p><strong>Fluid replacement:</strong> Use 0.9% normal saline.</p>
+<p>In children and young people with DKA, calculate their total fluid requirement for the first 48 hours by adding the estimated fluid deficit to the fluid maintenance requirement.</p>
+<p>When calculating the fluid requirement for children and young people with DKA, assume:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>a 5% fluid deficit in mild to moderate DKA (indicated by a HCO<sub>3</sub> above 8 mmol/l).</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>a 10% fluid deficit in severe DKA (indicated by a HCO<sub>3</sub> of 8 mmol/l or below).</p>
+</div></li>
+</ul>
+<p>Calculate the maintenance fluid requirement for children and young people with DKA using the following &#39;reduced volume&#39; rules:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>if they weigh less than 10 kg, give 2 ml/kg/hour.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>if they weigh between 10 and 40 kg, give 1 ml/kg/hour.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>if they weigh more than 40 kg, give a fixed volume of 40 ml/hour.</p>
+</div></li>
+</ul>
+<p>These are lower than standard fluid maintenance volumes because <strong>large fluid volumes are associated with an increased risk of cerebral oedema.</strong> Aim to replace the fluid deficit evenly over the first <span data-custom-style="no-break">48 hours</span> in children and young people with DKA.</p>
+<p>Think about stopping intravenous fluid therapy for DKA in a child or young person if ketosis is resolving, they are alert, and they can take oral fluids without nausea or vomiting.</p>
+<p>Note:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Do not give an intravenous fluid bolus to children and young people with mild or moderate DKA (indicated by a HCO<sub>3</sub> above 8 mmol/l).</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Do not routinely give an intravenous fluid bolus to a child or young person with severe DKA (HCO<sub>3</sub> of 8 mmol/l or below).</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Do not give children and young people with DKA additional intravenous fluid to replace urinary losses.</p>
+</div></li>
+</ul>
+<p><strong>Insulin: Start an intravenous insulin infusion 1–2 hours</strong> after beginning intravenous fluid therapy in children and young people with DKA.</p>
+<p>Add 50 U actrapid to 50 ml 0.9% saline. Infuse insulin continuously at a dosage of between 0.05 and 0.1 U/kg/hour. Do not give bolus doses of intravenous insulin.</p>
+<p>Do not change from intravenous insulin to subcutaneous insulin in a child or young person with DKA until ketosis is resolving, they are alert, and they can take oral fluids without nausea or vomiting.</p>
+<p>Start subcutaneous insulin in a child or young person with DKA at least 30 minutes before stopping intravenous insulin.</p>
+<p><strong>Potassium replacement:</strong> Add K to fluid when patient is resuscitated and has started passing urine. Typical deficit is 3-5 mmol/kg. Plasma K falls with insulin administration. See table 1 below for guidance.</p>
+<p><strong>Table 1:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Serum K Level (mmol/L)</strong></th>
+<th><strong>KCl amount to add per Litre of Fluid</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>K &gt; 5.5</td>
+<td>No need to add KCL</td>
+</tr>
+<tr class="even">
+<td>K &lt; 5.5</td>
+<td>Add <strong>20 mmol</strong> of KCl</td>
+</tr>
+<tr class="odd">
+<td>K &lt; 4.0</td>
+<td>Add <strong>30 mmol</strong> of KCl</td>
+</tr>
+<tr class="even">
+<td>K &lt; 3.0</td>
+<td>Add <strong>40 mmol</strong> of KCl</td>
+</tr>
+</tbody>
+</table>
+<h3 id="immediate-treatment-in-adults">Immediate treatment in adults</h3>
+<p><strong>Fluid replacement:</strong> Use 0.9% normal saline.</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Typical fluid deficit is 100 ml/kg. Replace over 48 hours. Initially give 1 litre in 1<sup>st</sup> hour, 1L over 2 hours, 1 l over 2 hours, Il over 4 hours, 1L over 4 hours.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Most patient will require 4-6 litres of fluid in the first 24 hours.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Review fluid balance 4-6 hourly.</p>
+</div></li>
+</ul>
+<p><strong>Insulin:</strong> Start an infusion after rehydrating with 1-2 litres of 0.9% normal saline.</p>
+<p>Add 50 U actrapid to 50 ml 0.9% saline. Infuse insulin insulin continuously at 0.1 U/kg/hour. Aim for decreasing blood glucose by 3 mmol/L per hour and increasing bicarbonate by 3 mmol/l/hour. Run insulin in one iv line, while you run normal saline in the other line.</p>
+<p>Continue fixed rate insulin until bicarbonate is &gt; 18 mmol/l. After then, switch to sliding scale insulin for 24 hours to enable estimation of 24 hour insulin requirement. Use table 2 below to guide this.</p>
+<p><strong>Table 2:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Blood glucose (mmol/l per hour)</strong></th>
+<th><strong>Insulin Infusion (units/hour)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.0-2.0</td>
+<td>Stop insulin-call doctor on duty</td>
+</tr>
+<tr class="even">
+<td>2.1-4.0</td>
+<td>Call doctor on duty</td>
+</tr>
+<tr class="odd">
+<td>4.1-7.0</td>
+<td>0.5-1</td>
+</tr>
+<tr class="even">
+<td>7.1-11.0</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>11.1-20.0</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>&gt; 20.0</td>
+<td>7 &amp; call doctor on duty</td>
+</tr>
+</tbody>
+</table>
+<p>When glucose is &lt; 14 mmol/l, add 5% glucose to run with 0.9% saline and prevent hypoglycaemia. Aim to maintain blood sugar at 8-12 mmol/l.</p>
+<p><strong>Potassium replacement:</strong> Add K to fluid when patient is resuscitated and has started passing urine. Typical deficit is 3-5 mmol/kg. Plasma K falls with insulin administration. Use table 1 above.</p>
+<h3 id="transition-from-iv-insulin-and-fluids">Transition from iv insulin and fluids</h3>
+<p>iv fluids can be stopped 1–2 hours after substantial consumption of oral fluids without vomiting, if there are no ketones and the serum HCO3 is above 15 mmol/l.</p>
+<p>Subcutaneous insulin injection can be started when iv fluids are no longer needed. Pre-supper or pre-breakfast time is most convenient for starting or restarting intermediate- or long-acting insulin. Before then, rapid-acting or regular insulin 0.25 U/kg subcutaneously can be given every ∼6 hours, and the insulin infusion stopped 60–120 minutes after the first subcutaneous dose of regular insulin or 60 minutes after a rapid-acting insulin analog.</p>
+<p>Patients should not be kept in the hospital simply to adjust insulin dosage because food, activity, and psychosocial environment are not normal in the hospital setting. Therefore, insulin requirements will not be particularly informative for home management.</p>
+<p>Established patients with DKA can resume their usual home dose of insulin.</p>
+<h3 id="ongoing-inpatient-management">Ongoing inpatient management</h3>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Check serum K, HCO<sub>3</sub> &amp; glucose every 6 hours.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Do hourly temperature, BP, neurological observations (GCS or BCS) , fluid balance and bedside blood sugar.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>If the patient has not passed urine by one hour into resuscitation, consider passing urinary catheter. Aim for a urinary output of &gt; 0.5 ml/kg/hour.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Change fluids to 0.9% normal saline with 5% glucose once the plasma glucose concentration falls below 14 mmol/l in children and young people with DKA.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Consider NG tube if vomiting or drowsy.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p><strong>Do not give intravenous sodium bicarbonate to patients with DKA.</strong></p>
+</div></li>
+</ul>
+<p>Find and treat the cause of the DKA e.g. infection or other intercurrent illness, poor adherence to meds for previously known patients. Investigate as appropriate e.g. Chest X-ray, FBC, Blood culture, urine culture.</p>
+<p>Stop iv insulin infusion when BM is between 11.1-13.9 mmol/l and serum HCO<sub>3</sub> &gt; 15 mmol/l. Then switch to sc insulin at 0.5-0.8 U/kg in divided doses. Note that we usually have soluble insulin (actrapid) and isophane insulin (insulatard) available. Mixtard 30:70 is available for staff and their dependent relatives only.</p>
+<h3 id="long-term-care-of-diabetes">Long term care of diabetes</h3>
+<p>At least in the short term, all children and many adults will need to remain on insulin. They should be referred to EFSTH or Pakala clinic in Banjul on discharge from the ward, as these clinics are able to provide insulin therapy to outpatients.</p>
+<p>Adults whose ketoacidosis has very rapidly resolved within 24 hours of admission may be switched to oral therapy prior to discharge from the ward. Guidance for their long term care can be found in the diabetes mellitus guideline.</p>
+<h2 id="key-issues-for-nursing-care">Key Issues for Nursing care</h2>
+<p><strong>Assess skin turgor, mucous membranes, and thirst</strong>: This is to provide baseline data for further comparison. Skin turgor will decrease and tenting may occur. The oral mucous membranes will become dry, and the client may experience extreme thirst.</p>
+<p><strong>Monitor hourly intake and output:</strong> Oliguria or anuria results from reduced glomerular <a href="https://nurseslabs.com/fluid-and-electrolytes/">filtration</a> and renal blood flow.</p>
+<p><strong>Monitor respirations, e.g., acetone breath, Kussmaul’s respirations</strong>: Acetone breath is due to the breakdown of acetoacetic acid. Kussmaul’s respiration (rapid and shallow breathing) represent a compensatory mechanism by the respiratory buffering system to raise arterial pH by exhaling more carbon dioxide.</p>
+<p><strong>Monitor heart rate</strong>: Compensatory mechanism results in peripheral vasoconstriction with a weak, thready pulse that is easily obliterated.</p>
+<p><strong>Monitor BP especially for orthostatic <a href="https://nurseslabs.com/hypovolemic-shock-nursing-care-plans/">hypotension</a></strong>: Decreased blood volume may be manifested by a drop in systolic <a href="https://nurseslabs.com/cardiovascular-system-anatomy-physiology/">blood pressure</a> and orthostatic hypotension</p>
+<p><strong>Assess for signs of infection and inflammation</strong>: Infection is a common cause of DKA. Signs of infection includes fever, chills, <a href="https://nurseslabs.com/impaired-urinary-elimination/">dysuria</a>, and increased WBC count</p>
+<p><strong>Observe client’s feet for ulcers, infected toenails, or other medical problems and</strong> <strong>provide wound care where necessary</strong> : Due to impaired circulation in diabetes, foot injuries are predisposed to poor wound healing.</p>
+<p><strong>Observe aseptic technique during IV <a href="https://nurseslabs.com/muscular-system-anatomy-physiology/">insertion</a> and medication administration</strong>: Elevated blood sugar weakens the immune system thus clients are more <a href="https://nurseslabs.com/patient-positioning/">prone</a> to infection.</p>
+<p><strong>Administer <a href="https://nurseslabs.com/antibiotics/">antibiotics</a></strong> as indicated: Early initiation of <a href="https://nurseslabs.com/antibiotics/">antibiotic</a> may help to prevent <a href="https://nurseslabs.com/sepsis-nursing-care-plans/">sepsis</a>.</p>
+<p><strong>Teach signs of hypoglycaemia:</strong> eg, dizziness, sweating, hunger, pallor, diaphoresis, nervousness, tremors. These are signs of excessive insulin dosage, resulting in hypoglycemia. Early recognition of these symptoms promotes immediate intervention.</p>
+<p><strong>Determine client’s dietary program and usual pattern</strong>: Recognizes deficits and deviations from therapeutic needs</p>
+<h2 id="references">References</h2>
+<p>von Oettingen J, Wolfsdorf J, Feldman HA, Rhodes ET. Use of Serum Bicarbonate to Substitute for Venous pH in New-Onset Diabetes. Pediatrics 2015; 136: e371–7.</p>
+<p>Internal Diabetes Foundation clinical guidelines for the management of diabetes.</p>
+<p>American Diabetes Foundation-Diabetes care Guidelines</p>
+<p>Diabetic Ketoacidosis and Hyperglycemic Hyperosmolar Nonketotic Syndrome Nursing Care Plans <a href="https://nurseslabs.com/diabetic-ketoacidosis-nursing-care-plans/"><span data-custom-style="Hyperlink">https://nurseslabs.com/diabetic-ketoacidosis-nursing-care-plans/</span></a> (Accessed on 16/8/2018)</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Written by:</strong></th>
+<th>Name: Amie Secka</th>
+<th>Date: 03 June 2018</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reviewed by:</strong></td>
+<td>Name: Baderinwa Abatan</td>
+<td>Date: 01 August 2018</td>
+</tr>
+<tr class="even">
+<td><strong>Version:</strong></td>
+<td><strong>Change history:</strong></td>
+<td><strong>Review due date:</strong></td>
+</tr>
+<tr class="odd">
+<td>1.0</td>
+<td>New document</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2.0</td>
+<td>Previous guidelines for adults and children were combined, transferred onto new template and updated.</td>
+<td>15 August 2020</td>
+</tr>
+<tr class="odd">
+<td>2.1</td>
+<td>Executive summary</td>
+<td>15 August 2020</td>
+</tr>
+<tr class="even">
+<td>Review Comments (<em>if applicable)</em></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
+</body>
+</html>

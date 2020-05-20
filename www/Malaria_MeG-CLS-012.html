@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!--
+==============================================================================
+           "GitHub HTML5 Pandoc Template" v2.1 — by Tristano Ajmone           
+==============================================================================
+Copyright © Tristano Ajmone, 2017, MIT License (MIT). Project's home:
+
+- https://github.com/tajmone/pandoc-goodies
+
+The CSS in this template reuses source code taken from the following projects:
+
+- GitHub Markdown CSS: Copyright © Sindre Sorhus, MIT License (MIT):
+  https://github.com/sindresorhus/github-markdown-css
+
+- Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
+  http://primercss.io/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The MIT License 
+
+Copyright (c) Tristano Ajmone, 2017 (github.com/tajmone/pandoc-goodies)
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+Copyright (c) 2017 GitHub Inc.
+
+"GitHub Pandoc HTML5 Template" is Copyright (c) Tristano Ajmone, 2017, released
+under the MIT License (MIT); it contains readaptations of substantial portions
+of the following third party softwares:
+
+(1) "GitHub Markdown CSS", Copyright (c) Sindre Sorhus, MIT License (MIT).
+(2) "Primer CSS", Copyright (c) 2016 GitHub Inc., MIT License (MIT).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+==============================================================================-->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Malaria MeG-CLS-012</title>
+  <style type="text/css">
+@charset "UTF-8";.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5;word-wrap:break-word;box-sizing:border-box;min-width:200px;max-width:980px;margin:0 auto;padding:45px}.markdown-body a{color:#0366d6;background-color:transparent;text-decoration:none;-webkit-text-decoration-skip:objects}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body a:hover{text-decoration:underline}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body strong{font-weight:600}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1{font-size:2em;margin:.67em 0;padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body h2{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eaecef}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body img{border-style:none}.markdown-body svg:not(:root){overflow:hidden}.markdown-body hr{box-sizing:content-box;height:.25em;margin:24px 0;padding:0;overflow:hidden;background-color:#e1e4e8;border:0}.markdown-body hr::before{display:table;content:""}.markdown-body hr::after{display:table;clear:both;content:""}.markdown-body input{margin:0;overflow:visible;font:inherit;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dd{margin-left:0}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}.markdown-body pre{font:12px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;word-wrap:normal}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;border-spacing:0;border-collapse:collapse}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body code{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body code::after,.markdown-body code::before{letter-spacing:-.2em;content:" "}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code::after,.markdown-body pre code::before{content:normal}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{box-shadow:inset 0 -1px 0 #959da5;display:inline-block;padding:3px 5px;font:11px/10px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;color:#444d56;vertical-align:middle;background-color:#fcfcfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body::before{display:table;content:""}.markdown-body::after{display:table;clear:both;content:""}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.Alert,.Error,.Note,.Success,.Warning{padding:11px;margin-bottom:24px;border-style:solid;border-width:1px;border-radius:4px}.Alert p,.Error p,.Note p,.Success p,.Warning p{margin-top:0}.Alert p:last-child,.Error p:last-child,.Note p:last-child,.Success p:last-child,.Warning p:last-child{margin-bottom:0}.Alert{color:#246;background-color:#e2eef9;border-color:#bac6d3}.Warning{color:#4c4a42;background-color:#fff9ea;border-color:#dfd8c2}.Error{color:#911;background-color:#fcdede;border-color:#d2b2b2}.Success{color:#22662c;background-color:#e2f9e5;border-color:#bad3be}.Note{color:#2f363d;background-color:#f6f8fa;border-color:#d5d8da}.Alert h1,.Alert h2,.Alert h3,.Alert h4,.Alert h5,.Alert h6{color:#246;margin-bottom:0}.Warning h1,.Warning h2,.Warning h3,.Warning h4,.Warning h5,.Warning h6{color:#4c4a42;margin-bottom:0}.Error h1,.Error h2,.Error h3,.Error h4,.Error h5,.Error h6{color:#911;margin-bottom:0}.Success h1,.Success h2,.Success h3,.Success h4,.Success h5,.Success h6{color:#22662c;margin-bottom:0}.Note h1,.Note h2,.Note h3,.Note h4,.Note h5,.Note h6{color:#2f363d;margin-bottom:0}.Alert h1:first-child,.Alert h2:first-child,.Alert h3:first-child,.Alert h4:first-child,.Alert h5:first-child,.Alert h6:first-child,.Error h1:first-child,.Error h2:first-child,.Error h3:first-child,.Error h4:first-child,.Error h5:first-child,.Error h6:first-child,.Note h1:first-child,.Note h2:first-child,.Note h3:first-child,.Note h4:first-child,.Note h5:first-child,.Note h6:first-child,.Success h1:first-child,.Success h2:first-child,.Success h3:first-child,.Success h4:first-child,.Success h5:first-child,.Success h6:first-child,.Warning h1:first-child,.Warning h2:first-child,.Warning h3:first-child,.Warning h4:first-child,.Warning h5:first-child,.Warning h6:first-child{margin-top:0}h1.title,p.subtitle{text-align:center}h1.title.followed-by-subtitle{margin-bottom:0}p.subtitle{font-size:1.5em;font-weight:600;line-height:1.25;margin-top:0;margin-bottom:16px;padding-bottom:.3em}div.line-block{white-space:pre-line}
+  </style>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<article class="markdown-body">
+<h1 id="malaria">Malaria</h1>
+<h2 id="executive-summary"><em>Executive summary</em></h2>
+<h2 id="introduction">Introduction </h2>
+<p>Malaria is a preventable and curable disease which is caused by parasites of the genus Plasmodium. Species that can cause malaria include <em>P. falciparum, P. vivax, P. ovale and P. malariae</em>. Of these, <em>P. falciparum</em> is the deadliest as well as the most common specie in sub-Saharan Africa. They are usually transmitted through the bite of an infected female Anopheles mosquito. As the endemicity of malaria reduces in The Gambia, non-development of immunity in childhood may cause increased number of severe malaria cases among older patients in the near future.</p>
+<p>This guideline covers the diagnosis and treatment of both uncomplicated and severe malaria.</p>
+<h2 id="target-users">Target users</h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Nurses</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Doctors</p>
+</div></li>
+</ul>
+<h2 id="target-area-of-use">Target area of use </h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Gate Clinic</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Outpatient Department</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Ward</p>
+</div></li>
+</ul>
+<h2 id="key-areas-of-focus-new-additions-changes">Key areas of focus / New additions / Changes </h2>
+<p>This guidelines describes the features of uncomplicated malaria and those of severe malaria. The differential diagnoses of malaria is extensive. The diagnosis of malaria requires the use of rapid diagnostic tests or blood films.</p>
+<p>Most patients with uncomplicated malaria should be treated with co-artem at the Gate Clinic. Babies under 5 kg, pregnant women in first trimester and patients with positive blood smears despite treatment within the preceding fortnight should be referred to the outpatient department.</p>
+<p>Severe malaria is a medical emergency requiring inpatient parenteral therapy for at least 24 hours. The drug of choice is artesunate. Quinine and artemether are alternatives.</p>
+<p>Febrile patients should not be tepid sponged.</p>
+<h2 id="limitations">Limitations </h2>
+<p>Patients with coma, severe anaemia, spontaneous bleeding or shock cannot be managed adequately at Keneba. Such patients should be given parenteral antimalarials and referred immediately.</p>
+<h2 id="presenting-symptoms-and-signs">Presenting symptoms and signs</h2>
+<p>Initial symptoms are non-specific and may include</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Myalgia</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Arthralgia</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Headache</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Abdominal discomfort</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Fatigue</p>
+</div></li>
+</ul>
+<p>Following the initial stage, other symptoms such as fever ( &gt; 37.5ºC), chills, anorexia, vomiting and increasing malaise may arise.</p>
+<p>Younger children may present with lethargy and refusal of feeds.</p>
+<p>The following symptoms/signs, if present, allow for the diagnosis of <strong>severe malaria</strong>.</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Impaired consciousness: Glasgow coma score &lt; 11 in adults, Blantyre coma score &lt; 3 in children</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Weakness such that the patient cannot walk or sit without help</p>
+</div></li>
+</ul>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>In a young child, failure to feed</p>
+</div></li>
+</ul>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Convulsions: more than 2 episodes in 24 hours</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Respiratory distress</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Shock</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Jaundice</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Hematuria</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Spontaneous bleeding</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Pulmonary oedema: oxygen saturation of &lt; 92% with a respiratory rate of &gt; 30 /minute or confirmed radiologically</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Hypoglycemia: blood glucose &lt; 2.2 mmol/l</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Severe anaemia: Hb &lt; 5 g/dl or PCV &lt; 15%</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Persistent vomiting</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Hyperparasitaemia: Malaria smear &gt; 100/l</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Renal impairment: serum creatinine &gt; 265 µmol/l or blood urea &gt;20 mmol/l</p>
+</div></li>
+</ul>
+<h2 id="examination-findings">Examination findings</h2>
+<p>General examination: Fever, Pallor</p>
+<p>Central Nervous system: coma score and orientation (especially important in cases of severe malaria).</p>
+<h3 id="important-things-to-look-for">Important things to look for </h3>
+<h2 id="any-symptom-or-sign-indicative-of-severe-malaria-should-be-looked-for-to-ensure-early-treatment.">Any symptom or sign indicative of severe malaria should be looked for to ensure early treatment.</h2>
+<h2 id="differential-diagnoses">Differential diagnoses</h2>
+<p>Not all fever is malaria. The list of differential diagnoses is long and includes:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Bacteraemia from any cause</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>African trypanosomiasis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Amoebiasis and amoebic liver abscess</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Enteric fever</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Viral haemorrhagic fevers</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Dengue fever</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Encephalitis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Hepatitis</p>
+</div></li>
+</ul>
+<h2 id="investigations">Investigations</h2>
+<p>Rapid diagnostic test (RDT).</p>
+<p>Malaria microscopy smear (Blood film):</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>if no RDT available or</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>if the patient was treated for malaria within the last 2 weeks (the RDT will still be positive from the last infection).</p>
+</div></li>
+</ul>
+<p>Blood glucose.</p>
+<p>Hb or PCV (if patient is pale).</p>
+<p>Liver function tests (should not be routinely requested unless clinically indicated).</p>
+<p>Renal function tests (should not be routinely requested unless clinically indicated).</p>
+<h2 id="management-of-malaria-in-gate-clinic">Management of malaria in gate clinic</h2>
+<p>Refer the following patients to the doctor:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Patients with any sign or symptom of severe malaria (call the doctor).</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Babies under 5 kg.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Pregnant women in first trimester.</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Patients who were treated in the last 2 weeks and have a positive malaria smear.</p>
+</div></li>
+</ul>
+<p>All other patients can be treated in Gate clinic.</p>
+<p>Co-artem is given in 6 doses based on body weight. Give first dose under supervision. Repeat after an anti-emetic if it is vomited. Advise patient to take second dose 8 hours later after food and to continue taking subsequent doses morning and evening.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Weight in Kg</strong></th>
+<th><strong>Dose</strong></th>
+<th><strong>Number of tablets</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5 to &lt; 15</td>
+<td>20/120</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>15 to &lt; 25</td>
+<td>40/240</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>25 to &lt; 35</td>
+<td>60/360</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>≥ 35</td>
+<td>80/480</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Give paracetamol for symptom relief.</p>
+<h2 id="management-of-malaria-in-opd">Management of malaria in OPD</h2>
+<h3 id="uncomplicated-malaria-in-special-groups">Uncomplicated malaria in special groups:</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Group</strong></th>
+<th><strong>Treatment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pregnant women (1<sup>st</sup> trimester)</td>
+<td>Oral quinine and clindamycin for 7 days</td>
+</tr>
+<tr class="even">
+<td>Infants &lt; 5 kg</td>
+<td>Artemether / lumefantrine at 4 mg artemether / 24 mg lumefantrine /kg body weight</td>
+</tr>
+<tr class="odd">
+<td>Non-immune travellers</td>
+<td>Artemether / lumefantrine</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uncomplicated-p.-ovale-p.-malariae-p.-vivax-malaria">Uncomplicated <em>P. ovale, P. malariae, P. vivax</em> malaria</h3>
+<p>Treat as for <em>P. falciparum</em> malaria with co-artem. Add primaquine to eliminate hypnozoites if confirmed to have <em>P. ovale</em> or <em>P. vivax</em>.</p>
+<h2 id="management-of-severe-malaria-on-the-ward">Management of severe malaria on the ward</h2>
+<p>The drug of choice for severe malaria is parenteral artesunate. If not available, consider parenteral artemether or quinine.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Drug</strong></th>
+<th><strong>Dosage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Artesunate</td>
+<td><p>2.4 mg/kg iv or im on admission, then at 12 hours, then at 24 hours, then daily until oral medications can be tolerated. It should be given for a <strong>minimum</strong> of 24 hours.</p>
+<p><strong>Note</strong>: Children &lt; 20 kg should receive a higher dosage of 3 mg/kg.</p></td>
+</tr>
+<tr class="even">
+<td>Quinine</td>
+<td>Loading dose by infusion at 20 mg/kg in 10 ml/kg of iv fluid over 2-4 hours, then after 8 hours, 10 mg/kg in iv fluid over 2 hours, 8 hourly until patient can tolerate oral medications.</td>
+</tr>
+<tr class="odd">
+<td>Artemether</td>
+<td>3.2 mg/kg im on admission, then 1.6 mg/kg daily until patient can tolerate oral medication.</td>
+</tr>
+</tbody>
+</table>
+<p>Parenteral drugs should be given to ALL patients with severe malaria for <em>at least</em> 24 hours and then followed by a full-course of an artemisinin-based combination therapy (ACT).</p>
+<h3 id="complications-of-severe-malaria">Complications of severe malaria</h3>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Complication</strong></th>
+<th><strong>Treatment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coma</td>
+<td><p>Treat as an unconscious patient; regular turning, maintain airway, rule out other treatable causes.</p>
+<p><em>Keneba: Commence antimalarial therapy and refer patient.</em></p></td>
+</tr>
+<tr class="even">
+<td>Hyperpyrexia</td>
+<td>Expose and give paracetamol – <strong>do not tepid sponge.</strong></td>
+</tr>
+<tr class="odd">
+<td>Convulsions</td>
+<td>Prompt treatment with iv or rectal diazepam or im paraldehyde</td>
+</tr>
+<tr class="even">
+<td>Hypoglycaemia</td>
+<td>Threshold for intervention is 3.0 mmol/l in children younger than 5 years and 2.2 mmol/l in patients aged 5 years or older. Correct hypoglycemia and give maintenance fluid which contains glucose (50% dextrose 1 ml/kg diluted in an equal strength of water for injection).</td>
+</tr>
+<tr class="odd">
+<td>Severe Anaemia</td>
+<td><p>Transfusion with fresh whole blood.</p>
+<p><em>Keneba: Commence antimalarial therapy and refer patient</em></p></td>
+</tr>
+<tr class="even">
+<td>Acute Pulmonary Oedema</td>
+<td><p>Nurse in 45° propped-up position.</p>
+<p>Start oxygen therapy.</p>
+<p>Give diuretic (intravenous furosemide).</p></td>
+</tr>
+<tr class="odd">
+<td>Spontaneous Bleeding</td>
+<td><p>Transfuse with fresh whole blood.</p>
+<p><em>Keneba: Commence antimalarial therapy and refer patient</em></p></td>
+</tr>
+<tr class="even">
+<td>Shock</td>
+<td><p>Suspect bacterial sepsis.</p>
+<p>Take samples for cultures.</p>
+<p>Give broad spectrum parenteral antibiotics.</p>
+<p><em>Keneba; Commence antimalarial therapy, parenteral antibiotics and refer patient</em></p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-issues-for-nursing-care">Key issues for nursing care</h2>
+<p>Do not tepid sponge febrile patients. Check charts and consider giving paracetamol if not already given.</p>
+<h2 id="references">References</h2>
+<p>World Health Organization (WHO). Factsheet on malaria [internet].Geneva: WHO; 2018. Available from: <span data-custom-style="Hyperlink"><a href="http://www.who.int/en/news-room/fact-sheets/detail/malaria">http://www.who.int/en/news-room/fact-sheets/detail/malaria</a></span> Accessed: June 11th 2018</p>
+<p>World Health Organization (WHO). Guidelines for the treatment of malaria. 3<sup>rd</sup> ed. Geneva: WHO; 2015. Available from: <span data-custom-style="Hyperlink"><a href="http://apps.who.int/iris/bitstream/handle/10665/162441/9789241549127_eng.pdf;jsessionid=3B5C932E177AC0E91DFA84112DEBD6C7?sequence=1">http://apps.who.int/iris/bitstream/handle/10665/162441/9789241549127_eng.pdf;jsessionid=3B5C932E177AC0E91DFA84112DEBD6C7?sequence=1</a> Accessed: June 9<sup>th</sup> 2018</span></p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Written by:</strong></th>
+<th>Name: Azeezat Sallahdeen</th>
+<th>Date: 31 July 2018</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reviewed by:</strong></td>
+<td>Name: Fatai Akemokwe</td>
+<td>Date: 31 July 2018</td>
+</tr>
+<tr class="even">
+<td><strong>Version:</strong></td>
+<td><strong>Change history:</strong></td>
+<td><strong>Review due date:</strong></td>
+</tr>
+<tr class="odd">
+<td>1.0</td>
+<td>New document a</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2.0</td>
+<td>Adjusted to broaden relevance beyond gate clinic</td>
+<td>31 July 2020</td>
+</tr>
+<tr class="odd">
+<td>2.1</td>
+<td>Executive summary added</td>
+<td>31 July 2020</td>
+</tr>
+<tr class="even">
+<td>Review Comments (<em>if applicable)</em></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
+</body>
+</html>
