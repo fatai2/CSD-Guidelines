@@ -5,35 +5,21 @@ on:
       - master
 jobs:
   setup-pandoc:
-    name: Setup and run pandoc
+    name: Setup pandoc
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-pandoc@v1
+      - name: install pandoc
+        uses: r-lib/actions/setup-pandoc@v1
         with:
           pandoc-version: '2.9.2'
       - run: echo "# Test" | pandoc -t html
-  convert-docx-html:
-    name: convert Docx to HTML
-    needs: setup-pandoc
-    runs-on: windows-2019
-    steps:
-    - name: Display the path
-      run: |
-        for /r "docs" %i in (*.docx) do pandoc -s --self-contained --template=GitHub.html5 --track-changes=accept -f docx+styles -t html "%~fi" -o "%~dpni.html"
-        for /R %~dp0 %i in (*.html) do call :repl "%i"
-        goto :eof 
-        :repl
-        set "_fn=%~nx1"
-        ren %1 "%_fn: =_%"
-        for /r "docs" %i in (*.html) do move "%~dpni.html" www
-      shell: cmd
-  publish:
-    name: Install and publish
-    needs: [setup-pandoc, convert-docx-html]
-    runs-on: windows-2019
-    steps:
-      - uses: actions/checkout@v2
+      - name: convert docx to html
+        run: |
+          Get-ChildItem -Path ".\docs" -Filter *.docx | ForEach-Object { pandoc -s --self-contained --template=GitHub.html5 --track-changes=accept --quiet -f docx+styles -t html -o ($_.FullName + '.html') $_.FullName }
+          Get-ChildItem -Path ".\docs" -Filter *.html | Rename-Item -NewName { $_.name -replace " ","_" }
+          Get-ChildItem -Path ".\docs\*.html" -Recurse | Move-Item -Destination ".\www"
+        shell: powershell   
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
