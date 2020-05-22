@@ -20,6 +20,8 @@ jobs:
           Get-ChildItem -Path ".\docs" -Filter *.html | Rename-Item -NewName { $_.name -replace " ","_" }
           Get-ChildItem -Path ".\docs" -Filter *.html | Rename-Item -Force -NewName { $_.FullName -replace ".docx.","." }
           Get-ChildItem -Path ".\docs\*.html" -Recurse | Move-Item -Force -Destination ".\www"
+          function Get-TimeStamp { return "[{0:dd-MMM-yyyy} {0:HH:mm:ss}]" -f (Get-Date) }
+          Write-Output "Contents last updated at $(Get-TimeStamp)" | Out-file -FilePath .\lastUpdated.txt
         shell: powershell
       - name: Commit files  # transfer the new html files back into the repository
         run: |
@@ -31,18 +33,12 @@ jobs:
         uses: ad-m/github-push-action@master  
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          force: true  
-      - name: My backup step  # if commit fails because files are even with remote repo
-        if: ${{ failure() }}
-        run: |
-          git pull origin master       
+          force: true      
       - name: setup-node
-        if: ${{ always() }}
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
       - name: expo publish
-        if: ${{ always() }}
         uses: expo/expo-github-action@v5
         with:
           expo-version: 3.x
@@ -50,7 +46,6 @@ jobs:
           expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
           expo-cache: true
       - name: actual running
-        if: ${{ always() }}
         run: |
           yarn install
           expo publish
