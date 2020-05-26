@@ -37,7 +37,7 @@ These builds will depend on App store credentials that need to have been previou
 These credentials should not be exposed in the code and should be stored as GitHub secrets in the repository for security reasons
 Note that unlike publishing over-the air updates, app builds may take several hours to complete!
 
-**When done with a new build, please remember to replace the build commands in the [Workflow] file with the original `expo publish` line!** This can be also be done from Github Desktop software porgram (revert the app building commit)
+**When done with a new build, please remember to replace the build commands in the [Workflow] file with the original `expo publish` line!** This can be also be done from Github Desktop software (by reverting the app building commit)
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
