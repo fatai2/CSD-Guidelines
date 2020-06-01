@@ -34,18 +34,18 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true      
-      - name: setup-node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-      - name: expo publish
-        uses: expo/expo-github-action@v5
-        with:
-          expo-version: 3.x
-          expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
-          expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
-          expo-cache: true
-      - name: actual running
-        run: |
-          yarn install
-          expo publish
+     # - name: setup-node
+      #  uses: actions/setup-node@v1
+       # with:
+        #  node-version: 12.x
+     # - name: expo publish
+     #   uses: expo/expo-github-action@v5
+     #   with:
+     #     expo-version: 3.x
+     #     expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
+     #     expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
+     #     expo-cache: true
+     # - name: actual running
+     #   run: |
+          # yarn install
+          # expo publish
