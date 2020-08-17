@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, ScrollView, Dimensions  } from 'react-native';
 import {
   useTheme,
 } from 'react-native-paper';
 import color from 'color';
 import fileList from '../data/output/filelist.js'
-import { WebView } from 'react-native-webview';
+import HTML from 'react-native-render-html';
 
 type Props = {
   id: string;
@@ -17,10 +17,9 @@ export const DetailedTwitt = (props: Props) => {
   const file = props.id;
   const htmlString = fileList[file];
   return (
-        <WebView style = {styles.scrollViewContent}
-          originWhitelist={["*"]}
-          source= {{ html: htmlString }}
-        />
+        <ScrollView style={{ styles.scrollViewContent }}>
+			<HTML html={htmlString} imagesMaxWidth= {Dimensions.get('window').width} />
+		</ScrollView>
   );
 };
 
