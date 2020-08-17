@@ -17,7 +17,7 @@ export const DetailedTwitt = (props: Props) => {
   const file = props.id;
   const htmlString = fileList[file];
   return (
-        <ScrollView style={{ styles.scrollViewContent }}>
+        <ScrollView style={ styles.scrollViewContent }>
 			<HTML html={htmlString} imagesMaxWidth= {Dimensions.get('window').width} />
 		</ScrollView>
   );
